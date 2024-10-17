@@ -11,6 +11,7 @@
 /*** Event Listeners ***/
 document.getElementById("d6").addEventListener("click", rolld6);
 document.getElementById("d8").addEventListener("click", rolld8);
+document.getElementById("d100").addEventListener("click", roll_wildmagic);
 document.getElementById("enter").addEventListener("click", say_hello);
 
 /*** Functions ***/
@@ -39,9 +40,8 @@ function say_hello() {
 }
 
 function roll_wildmagic() {
-    let rolld100 = randInt(1, 6);
-    document.getElementById("wild magic").textContent = `You rolled a ${rolld100},`;
-
+    let rolld100 = randInt(1, 100);
+    document.getElementById("wild magic").textContent = `You rolled a ${rolld100}, I don't know how to make if-then statements in code yet, so go look up your result yourself`;
     //When I can do if-then statements I'll do it so you actually get the result accordingly
     //For now, we stick with this :(
 }
