@@ -37,3 +37,11 @@ function say_hello() {
     //And say hello!
     document.getElementById("greeting").textContent = `Hello ${name}!`;
 }
+
+function roll_wildmagic() {
+    let rolld100 = randInt(1, 6);
+    document.getElementById("wild magic").textContent = `You rolled a ${rolld100},`;
+
+    //When I can do if-then statements I'll do it so you actually get the result accordingly
+    //For now, we stick with this :(
+}
